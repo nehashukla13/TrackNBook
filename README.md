@@ -1,8 +1,9 @@
 # Train Ticket Reservation System 
-
+The Train Ticket Reservation System is a web-based application designed to facilitate the booking and management of train tickets. This system allows users to view train schedules, check seat availability, search for trains, inquire about fares, and book tickets online. It also provides a secure login system for both users and administrators.
 
 ### About:
 This project is about the Train-Ticket-Reservation-System which is used to view Train Schedule, search trains, Seat availability, Train timings. We can also enquire about fare of different trains. We can get information about train between two stations. We can book seats online. This provides a safe and secure seat reservation system. 
+
 ### Online Train Information and Reservation
 <span style="color:blue">**This Website is built for following purpose:-**</span>
 - View Trains Schedule
@@ -52,36 +53,78 @@ This project is about the Train-Ticket-Reservation-System which is used to view 
 - Servlet
 - Oracle ( SQL )
 
-### ==== Software And Tools Required ======
-- : Git [https://www.youtube.com/watch?v=gv7VPQ4LZ7g]
-- : Java JDK 8+ [https://www.youtube.com/watch?v=O9PWH9SeTTE]
-- : Eclipse EE [https://www.youtube.com/watch?v=8aDsEV7txXE]
-- : Apache Maven [https://www.youtube.com/watch?v=jd2zx3dLjuw]
-- : Tomcat v8.0+ [https://youtu.be/mLFPodZO8Iw?t=903]
-- : Oracle (SQL) / SQL PLUS [https://www.youtube.com/watch?v=ZYOqykEDSqU]
-- : Oracle SQL Developer [https://www.youtube.com/watch?v=2a1JKIGVtd0]
+## Authors
+- [@nehashukla13]
+Neha Shukla - @shuklaneha.vst1363@gmail.com
 
-### ========== Dummy Database Initialization ===========
+## 🛠 Skills
+The TrackNBook project leverages a variety of technical skills to deliver a robust train ticket reservation system. Front-end development utilizes HTML, CSS, and Bootstrap to create responsive and user-friendly web pages. On the back-end, Java (J2EE) is employed for server-side logic, with Servlets handling HTTP requests and responses, and JDBC facilitating database connectivity. The database is managed using Oracle SQL, with SQL Plus and SQL Developer aiding in database administration. The project also incorporates tools like Git for version control, Eclipse EE as the integrated development environment, Apache Maven for build automation, and Tomcat v8.0+ for web server deployment. Additionally, skills in SQL query optimization, database design, and web application security are essential for ensuring the system's efficiency and security.
+## Installation
 
+Setup Instructions
+Prerequisites
+Git
+Java JDK 8+
+Eclipse EE
+Apache Maven
+Tomcat v8.0+
+Oracle SQL / SQL Plus
+Oracle SQL Developer
+Install my-project with npm
+
+```bash
+npm install my-project
+cd my-project
+Steps to Run the Project
+Clone the Repository:
+https://github.com/nehashukla13/TrackNBook
+
+Import the Project into Eclipse:
+
+Open Eclipse EE.
+Go to File > Import > Git > Projects From Git > Clone Uri.
+Paste the repository URL and follow the prompts to import the project.
+Build the Project:
+
+Right-click on the project and select Run as > Maven Build.
+In the goals field, enter clean install, then apply and run.
+Configure Tomcat Server:
+
+Right-click on the project and select Run As > Run On Server.
+Select Tomcat v8.0 and configure it if not already done.
+Add the project to the server and finish.
+Run the Project:
+
+Right-click on the project and select Run As > Run On Server.
+Check the site at http://localhost:8083/trainbook/.
+Default Credentials:
+
+Admin: admin@demo.com / admin
+User: shashi@demo.com / shashi
+## Usage/Examples
+
+```javascript
+import Component from 'my-project'
+
+function App() {
+  return <Component />
+}
+```
+
+========== Dummy Database Initialization ===========
 STEP 1: Open SQL Plus OR SQL Developer
 
 STEP 2: Login and connect to database using administrator username and password
 
 STEP 3 :Execute the below command first to create a new user:
 
-```SQL
-
 ALTER SESSION SET "_ORACLE_SCRIPT"=TRUE;  
 CREATE USER RESERVATION IDENTIFIED BY MANAGER;
 GRANT DBA TO RESERVATION;
 COMMIT;
-
-```
 NOTE: If the above command fails for alter session issues, try to remove first line and then execute it.
 
 STEP 4: Now execute the below sql query in same terminal
-
-```SQL
 
 CONNECT RESERVATION/MANAGER;
 CREATE TABLE "RESERVATION"."CUSTOMER" 
@@ -144,38 +187,15 @@ INSERT INTO RESERVATION.HISTORY VALUES('BBC375-NSDF-4675','shashi@demo.com',1000
 INSERT INTO RESERVATION.HISTORY VALUES('BBC373-NSDF-4674','shashi@demo.com',10006,TO_DATE('22-JULY-2024'), 'PATNA', 'DELHI', 3, 4352.25);
 
 COMMIT;
-```
 STEP 5: Now Execute the below query one by one to check if the tables are created successfully
-```SQL
+
 SELECT * FROM ADMIN;
 SELECT * FROM CUSTOMER;
 SELECT * FROM TRAIN;
 SELECT * FROM HISTORY;
-
-```
 Note: If any of the above commands fails, please try to fix it first and then proceed to next step
-	
-### ====== Importing and Running the Project Through Eclipse EE ===========
-Step 0: Open Eclipse Enterprise Edition. [Install if not available](https://www.youtube.com/watch?v=8aDsEV7txXE)
+# Hi there! 👋 I'm Neha Shukla 👋
+## 🚀 About Me
 
-Step 1: Click On File > Import > Git > Projects From Git > Clone Uri  > Paste The Repository Url: ```https://github.com/shashirajraja/Train-Ticket-Reservation-System.git``` > Next > Select Master Branch > Next > Finish
-
-Step 2.A: Right Click on Project > Run as > Maven Build > In the goals field enter "clean install" > apply > run
-
-Step 2.B: Right Click On Project > Build Path > Configure Build Path > Libraries > Remove And Update Any Libraries With Red Mark > Finish
-
-Step 3: [Only if Tomcat v8.0 is not Configured in Eclipse]: Right Click On Project > Run As > Run On Server > Select Tomcat v8.0 > (Select Tomcat V8.0 Installation Location If Asked) Next > Add <project-name> > Finish
-
-Step 4: In The Server Tab > Double Click On Tomcat Server > Ports  > Change The Port Number For Http/1.1 To 8083 > Close And Save
-
-Step 5: Right Click On Project > Run As > Run On Server > Select Tomcat V8.0 > Next > Add All> Done
-
-Step 6: Check Running The Site At  <a Href="Http://localhost:8083/trainbook/">http://localhost:8083/trainbook/</a>
-
-Step 7: Default Username And Password For Admin Is "admin@demo.com" And "admin"
-
-Step 8: Default Username And Password For User Is "shashi@demo.com" And "shashi"
-
-
-
+I’m a Computer Science undergrad with a passion for solving real-world problems through code and innovative thinking. I enjoy working on projects that span from AI and machine learning to cloud computing and full-stack development, always striving to build scalable and impactful solutions.
 
